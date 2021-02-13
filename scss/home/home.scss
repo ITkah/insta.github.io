@@ -3,6 +3,15 @@
     @media (max-width: 990px) {
         margin-bottom: 40px;
     }
+    @media (max-width: 576px) {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: 320px) {
+        height: 75vh;
+    }
     .show_history_title {
         text-align: center;
         color: #292929;
@@ -31,7 +40,7 @@
             img {
                 position: absolute;
                 left: 12px;
-                top: 16px;
+                top: 17px;
                 pointer-events: none;
             }
             input {

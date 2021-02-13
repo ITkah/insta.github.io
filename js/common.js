@@ -18,6 +18,14 @@ $('.popup-with-zoom-anim').magnificPopup({
 $(".unch").on("click", "a", function(event) {
     event.preventDefault();
     var id = $(this).attr('href'),
-        top = $(id).offset().top - 100;
+        top = $(id).offset().top - 80;
     $('body,html').animate({ scrollTop: top }, 1500);
+});
+
+$(".header_serach input").on("click", function() {
+    $(".hide_search").show();
+});
+
+$(".close").on("click", function() {
+    $(".hide_search").hide();
 });
