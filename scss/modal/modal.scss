@@ -1,0 +1,56 @@
+.zoom-anim-dialog {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    background: #fff;
+    @media (max-width: 576px) {
+        padding: 20px 10px;
+    }
+    .lang_title {
+        color: #292929;
+        text-align: center;
+        margin-bottom: 5px;
+        font: 500 1.4rem 'Roboto', sans-serif;
+        @media (max-width: 576px) {
+            font: 500 1.25rem 'Roboto', sans-serif;
+        }
+    }
+    .lang_text {
+        margin-bottom: 15px;
+        text-align: center;
+        color: #292929;
+        font: 400 .95rem/22px 'Roboto', sans-serif;
+        @media (max-width: 576px) {
+            margin-bottom: 12px;
+            font: 400 .87rem/20px 'Roboto', sans-serif;
+        }
+    }
+    .lang_wrap {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 10px;
+        @media (max-width: 990px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 360px) {
+            grid-gap: 5px;
+        }
+        .lang_box {
+            display: flex;
+            align-items: center;
+            font: 400 1rem 'Roboto', sans-serif;
+            color: #292929;
+            @media (max-width: 576px) {
+                font: 400 .9rem 'Roboto', sans-serif;
+            }
+            img {
+                margin-right: 5px;
+            }
+        }
+    }
+}
