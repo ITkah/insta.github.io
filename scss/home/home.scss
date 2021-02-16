@@ -323,3 +323,12 @@
         }
     }
 }
+
+.custom_pad {
+    padding: 0 35px;
+    grid-template-columns: 2fr 1fr;
+    @media (max-width: 990px) {
+        padding: 0 10px;
+        grid-template-columns: 1fr;
+    }
+}
