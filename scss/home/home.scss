@@ -311,3 +311,15 @@
         }
     }
 }
+
+.info_content {
+    background: #fff;
+    .container {
+        padding: 35px 0;
+    }
+    .info_content_wrap {
+        p:last-child {
+            margin: 0;
+        }
+    }
+}

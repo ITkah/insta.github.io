@@ -602,6 +602,13 @@ header {
 .page_max_rule .page_max_rule_wrap:last-child p {
   margin: 0; }
 
+.info_content {
+  background: #fff; }
+  .info_content .container {
+    padding: 35px 0; }
+  .info_content .info_content_wrap p:last-child {
+    margin: 0; }
+
 .profil_wrap {
   padding: 25px;
   background: #FFF;
