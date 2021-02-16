@@ -51,6 +51,11 @@ header {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-gap: 15px;
                 margin-bottom: 15px;
+                position: relative;
+                left: -10px;
+                @media (max-width: 990px) {
+                    left: -5px;
+                }
                 @media (max-width: 360px) {
                     grid-template-columns: 1fr 1fr;
                 }

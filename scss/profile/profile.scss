@@ -60,6 +60,19 @@
             font: 400 .8rem 'Roboto', sans-serif;
             color: #292929;
             text-align: center;
+            transition: .2s;
+            svg {
+                margin-right: 5px;
+            }
+            &:hover {
+                background: #EA6A41;
+                color: #fff;
+                svg {
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
             @media (max-width: 990px) {
                 width: 300px;
             }
@@ -180,7 +193,7 @@
             border-radius: 10px;
             margin-bottom: 10px;
             @media (max-width: 990px) {
-                max-height: 300px;
+                max-height: 475px;
             }
         }
         p {
@@ -264,7 +277,7 @@
         cursor: pointer;
         outline: none;
         user-select: none;
-        top: 40%;
+        top: 39.5%;
         right: 0;
         position: absolute;
         z-index: 9;
@@ -297,7 +310,7 @@
     flex-direction: column;
     padding: 10px;
     background: #FFF;
-    box-shadow: 0 0 10px rgba(51, 54, 70, .1);
+    box-shadow: 0 0 7px rgba(51, 54, 70, .06);
     border-radius: 8px;
     margin: 10px;
     .photo {
