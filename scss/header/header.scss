@@ -57,7 +57,7 @@ header {
                 }
                 .hide_popular_box {
                     display: flex;
-                    align-items: flex-start;
+                    align-items: center;
                     justify-content: center;
                     flex-direction: column;
                     @media(max-width: 360px) {
@@ -86,6 +86,9 @@ header {
                     padding-bottom: 10px;
                     margin-bottom: 10px;
                     border-bottom: 1px solid #E4E8EF;
+                    @media (max-width: 990px) {
+                        padding-left: 10.5px;
+                    }
                     img {
                         max-width: 100%;
                     }
