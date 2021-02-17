@@ -190,10 +190,11 @@
         img {
             width: 100%;
             object-fit: cover;
+            max-height: 350px;
             border-radius: 10px;
             margin-bottom: 10px;
             @media (max-width: 990px) {
-                max-height: 475px;
+                max-height: 450px;
             }
         }
         p {
