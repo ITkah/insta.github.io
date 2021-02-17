@@ -19,6 +19,7 @@
         flex-direction: column;
         img {
             margin-bottom: 15px;
+            border-radius: 50%;
         }
         .profil_name {
             font: 400 .87rem 'Roboto', sans-serif;
@@ -316,6 +317,7 @@
     margin: 10px;
     .photo {
         max-width: 100%;
+        border-radius: 50%;
         object-fit: cover;
         margin-bottom: 5px;
     }
@@ -352,4 +354,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    img {
+        border-radius: 50%;
+    }
 }
