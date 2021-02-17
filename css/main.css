@@ -129,6 +129,9 @@ header {
         margin: 0;
         padding: 0;
         border: none; }
+        @media (max-width: 990px) {
+          header .header_serach .hide_search .hide_popular_wrap .hide_popular_box:last-child {
+            padding-left: 10.5px; } }
     header .header_serach .form_input {
       position: relative;
       margin-right: 10px; }
