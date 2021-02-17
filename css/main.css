@@ -579,21 +579,21 @@ header {
   .page_max_rule .page_max_rule_wrap h3,
   .page_max_rule .page_max_rule_wrap h4,
   .page_max_rule .page_max_rule_wrap h5 {
-    font: 400 1.25rem 'Roboto', sans-serif;
+    font: 600 1.3rem 'Roboto', sans-serif;
     color: #6C757D;
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
     @media (max-width: 990px) {
       .page_max_rule .page_max_rule_wrap h1,
       .page_max_rule .page_max_rule_wrap h2,
       .page_max_rule .page_max_rule_wrap h3,
       .page_max_rule .page_max_rule_wrap h4,
       .page_max_rule .page_max_rule_wrap h5 {
-        font: 400 1.125rem 'Roboto', sans-serif;
+        font: 600 1.125rem 'Roboto', sans-serif;
         margin-bottom: 10px; } }
   .page_max_rule .page_max_rule_wrap p {
     color: #6C757D;
-    margin-bottom: 15px;
-    font: 400 1rem/24px 'Roboto', sans-serif; }
+    margin-bottom: 20px;
+    font: 400 1.1rem/26px 'Roboto', sans-serif; }
     @media (max-width: 990px) {
       .page_max_rule .page_max_rule_wrap p {
         margin-bottom: 10px;
@@ -604,10 +604,19 @@ header {
     margin-bottom: 15px;
     display: grid;
     grid-template-columns: 1fr 220px;
-    grid-gap: 10px; }
+    grid-gap: 10px;
+    position: relative;
+    padding-left: 20px; }
     @media (max-width: 576px) {
       .page_max_rule .page_max_rule_wrap .rule_boxs {
         grid-template-columns: 1fr; } }
+    .page_max_rule .page_max_rule_wrap .rule_boxs span {
+      position: absolute;
+      left: 0;
+      top: -1px;
+      display: block;
+      margin-right: 5px;
+      font: 600 1.2rem 'Roboto', sans-serif; }
 
 .page_max_rule .page_max_rule_wrap:last-child p {
   margin: 0; }
