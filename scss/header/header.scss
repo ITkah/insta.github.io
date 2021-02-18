@@ -130,7 +130,7 @@ header {
                 margin: 0;
                 margin-bottom: 10px;
             }
-            img {
+            .search_ic {
                 position: absolute;
                 left: 12px;
                 top: 17px;
@@ -138,6 +138,23 @@ header {
                 @media (max-width: 990px) {
                     top: 14px;
                 }
+            }
+            .delete_input {
+                position: absolute;
+                left: auto;
+                right: 5px;
+                top: 14px;
+                pointer-events: auto;
+                z-index: 9;
+                opacity: 0;
+                cursor: pointer;
+                transition: .2s;
+                @media (max-width: 990px) {
+                    top: 11px;
+                }
+            }
+            .delete_input_active {
+                opacity: 1;
             }
             input {
                 outline: none;
@@ -149,6 +166,18 @@ header {
                 border-radius: 3px;
                 width: 300px;
                 padding: 15px 15px 15px 40px;
+                transition: .2s;
+                &:hover {
+                    background: #FFF;
+                    border: 1px solid #8F9BB3;
+                }
+                &:focus {
+                    border: 1px solid #0384C6;
+                    box-shadow: 0px 0px 0px 4px rgba(3, 132, 198, 0.12);
+                    .delete_input {
+                        opacity: 1;
+                    }
+                }
                 @media (max-width: 990px) {
                     width: 100%;
                     padding: 12px 12px 12px 35px;
@@ -170,6 +199,11 @@ header {
                 text-align: center;
                 cursor: pointer;
                 padding: 15px;
+                transition: .2s;
+                &:hover {
+                    border: 1px solid #0972a7;
+                    background: #0972a7;
+                }
                 @media (max-width: 990px) {
                     width: 100%;
                     padding: 12px 30px;

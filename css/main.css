@@ -150,14 +150,31 @@ header {
         header .header_serach .form_input {
           margin: 0;
           margin-bottom: 10px; } }
-      header .header_serach .form_input img {
+      header .header_serach .form_input .search_ic {
         position: absolute;
         left: 12px;
         top: 17px;
         pointer-events: none; }
         @media (max-width: 990px) {
-          header .header_serach .form_input img {
+          header .header_serach .form_input .search_ic {
             top: 14px; } }
+      header .header_serach .form_input .delete_input {
+        position: absolute;
+        left: auto;
+        right: 5px;
+        top: 14px;
+        pointer-events: auto;
+        z-index: 9;
+        opacity: 0;
+        cursor: pointer;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+        @media (max-width: 990px) {
+          header .header_serach .form_input .delete_input {
+            top: 11px; } }
+      header .header_serach .form_input .delete_input_active {
+        opacity: 1; }
       header .header_serach .form_input input {
         outline: none;
         -webkit-appearance: none;
@@ -170,7 +187,19 @@ header {
                 box-sizing: border-box;
         border-radius: 3px;
         width: 300px;
-        padding: 15px 15px 15px 40px; }
+        padding: 15px 15px 15px 40px;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+        header .header_serach .form_input input:hover {
+          background: #FFF;
+          border: 1px solid #8F9BB3; }
+        header .header_serach .form_input input:focus {
+          border: 1px solid #0384C6;
+          -webkit-box-shadow: 0px 0px 0px 4px rgba(3, 132, 198, 0.12);
+                  box-shadow: 0px 0px 0px 4px rgba(3, 132, 198, 0.12); }
+          header .header_serach .form_input input:focus .delete_input {
+            opacity: 1; }
         @media (max-width: 990px) {
           header .header_serach .form_input input {
             width: 100%;
@@ -191,7 +220,13 @@ header {
       white-space: nowrap;
       text-align: center;
       cursor: pointer;
-      padding: 15px; }
+      padding: 15px;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+      header .header_serach .form_btn button:hover {
+        border: 1px solid #0972a7;
+        background: #0972a7; }
       @media (max-width: 990px) {
         header .header_serach .form_btn button {
           width: 100%;
@@ -568,6 +603,9 @@ header {
       font: 400 .87rem/20px 'Roboto', sans-serif; } }
   .info_content_wrap p a {
     color: #0384c6; }
+
+.page_max_rule .container {
+  max-width: 1100px; }
 
 .page_max_rule .page_max_rule_wrap {
   padding: 35px;

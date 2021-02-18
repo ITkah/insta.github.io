@@ -29,3 +29,18 @@ $(".header_serach input").on("click", function() {
 $(".close").on("click", function() {
     $(".hide_search").hide();
 });
+
+$(".input_search").keyup(function() {
+    var coll = $(this).val().length;
+    if (coll >= 3) {
+        $(".delete_input").addClass("delete_input_active");
+    } else {
+        $(".delete_input").removeClass("delete_input_active");
+    }
+});
+
+$(".delete_input").on("click", function() {
+    $(".input_search").val("");
+    $(this).removeClass("delete_input_active");
+    $(".hide_search").hide();
+});
